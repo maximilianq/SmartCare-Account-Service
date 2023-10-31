@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "smartcare-account-service"
+version = "0.0.1"
+authors = [
+  {name = "Maximilian Quaeck", email = "maximilian.quaeck@gmx.de"}
+]
+description = "Account Service of the SmartCare Platform handeling all user, group, action and endpoint entities as well as the sign in and sign out actions."
+dependencies = [
+    "simplesql @ git+ssh://git@github.com/maximilianq/SimpleSQL@v0.0.6",
+    "simpleamqp @ git+ssh://git@github.com/maximilianq/SimpleAMQP@v0.0.1",
+    "fastapi >= 0.100.0",
+    "uvicorn >= 0.23.2",
+    "python-dotenv >= 1.0.0"
+]

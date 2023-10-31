@@ -1,0 +1,1 @@
+from ._base import app_router
